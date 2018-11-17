@@ -61,7 +61,14 @@ app.get('/home',(req,res) =>{
 	})
 })
 
-
+app.get('/project',(req,res) =>{
+    res.render('portfolio.hbs',{
+        project_name:'Shiksha',
+        developer:'Vishesh',
+        Technology:'NodeJS',
+        Version:9  
+    })
+})
 
 
 app.listen(port,() =>{
