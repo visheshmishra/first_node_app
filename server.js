@@ -13,10 +13,12 @@ app.use((req,res,next) =>{
 })
 
 app.use((req,res,next) =>{
-    console.log(new Date().toString());
+    console.log(new Date().toString())/*
     res.render('maintenance.hbs', {
         errorMessage:"your government ban in your country..."
     })
+    */
+   next();
 })
 
 
